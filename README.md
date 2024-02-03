@@ -1,3 +1,10 @@
+# Signup-App
+
+## Overview
+
+The application allows one user to login as Admin and access list of users, but other can only login simply, you can view the list of users,
+delete users, view one user details.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

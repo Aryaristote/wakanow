@@ -21,12 +21,12 @@ export const getUsers = async () => {
   }
 };
 
-export const getUser = async (userId) => {
+export const getUser = async (id) => {
   try {
-    const response = await axios.get(`${API_URL}/users/${userId}`);
+    const response = await axios.get(`${API_URL}/users/${id}`);
     return response.data.data;
   } catch (error) {
-    console.error(`Error fetching user with ID ${userId}:`, error);
+    console.error(`Error fetching user with ID ${id}:`, error);
     throw error;
   }
 };
