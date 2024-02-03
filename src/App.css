@@ -1,38 +1,229 @@
-.App {
+body {
+  background: #d6d7d7;
+  font-family: "Open Sans", sans-serif;
+}
+.login-form h1 {
+  font-size: 36px;
   text-align: center;
+  color: #6165e4;
+  margin-bottom: 30px;
+  font-weight: normal;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-form .social-icon {
+    width: 100%;
+    font-size: 20px;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+    float: left;
+    padding-bottom: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-form .link {
+  text-align: center;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.login-form .link p:hover {
+  cursor: pointer;
+}
+.login-form {
+    background: #fff;
+    width: 450px;
+    border-radius: 6px;
+    margin: 0 auto;
+    display: table;
+    padding: 15px 30px 30px;
+    box-sizing: border-box;
+    margin-top: 5%;
+}
+.form-group {
+  float: left;
+  width: 100%;
+  margin: 0 0 15px;
+  position: relative;
+}
+.login-form input {
+    width: 100%;
+    padding: 5px;
+    height: 56px;
+    border-radius: 74px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding-left: 75px;
+}
+.login-form .form-group .input-icon {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    height: 100%;
+    padding-left: 35px;
+    color: #666;
+}
+.login-form .form-group .errorMsg {
+  color: red;
+  margin-left: 20px;
+  padding: 20px 0;
+}
+.login-form .form-group .sucessMsg {
+  color: green;
+  margin-left: 20px;
+  padding: 20px 0;
+}
+.login-form .form-group .input-icon button .icn{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.login-form .login-btn {
+  background: #6165e4;
+  padding: 11px 50px;
+  border-color: #6165e4;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  border: 1px solid #6165e4;
+  border-radius: 44px;
+  width: 50%;
+  height: 56px;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.login-form .reset-psw {
+  float: left;
+  width: 100%;
+  text-decoration: none;
+  color: #6165e4;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 11px;
+}
+.login-form .social-icon button {
+    font-size: 20px;
+    color: white;
+    height: 50px;
+    width: 50px;
+    background: #6165e4;
+    border-radius: 60%;
+    margin: 0px 10px;
+    border: none;
+    cursor: pointer;
+}
+.login-form button:hover{
+  opacity: 0.9;
+}
+.login-form .seperator {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  margin: 50px 0 0;
+}
+.login-form .seperator b {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  background: #fff;
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  position: relative;
+  top: -22px;
+  z-index: 1;
+}
+.login-form p {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+@media screen and (max-width:767px) {
+.login-form {
+    width: 90%;
+    padding: 15px 15px 30px;
+}
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Avatar image */
+img.avatar {
+   width: 40px;
+  lenght: 40px;
+  height: 40px;
+  border-radius: 50%;  
+}
+
+/* Admin side  */
+.admin-block {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+.admin-block header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.admin-block header button{
+  background-color: #6165e4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+.admin-block .task-items {
+  width: 100%;
+}
+.admin-block .task-items .item{
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 14px 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.admin-block .task-items .item .user{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.admin-block .task-items .item .user img{
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+}
+.admin-block .task-items .item .task button{
+  margin: 0 15px;
+  padding: 6px 10px;
+  background-color: transparent;
+  border: 2px solid #6165e4;
+  color: #6165e4;
+  border-radius: 20px;
+  font-weight: bolds;
+}
+.admin-block .task-items .item .task .Admin {
+  background-color: #6165e4;
+  color: white;
+}
+.admin-block .task-items .item .task button:hover{
+  cursor: pointer;
 }
