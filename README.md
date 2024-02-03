@@ -1,9 +1,20 @@
-# Signup-App
-
-## Overview
+# Overview
 
 The application allows one user to login as Admin and access list of users, but other can only login simply, you can view the list of users,
 delete users, view one user details.
+
+## Default admin info,
+
+Admin can login using (email: "eve.holt@reqres.in", password: "pistol") these are only cridentials that can access the user list,
+admin can delete users, see user details, edit user details.
+
+### What you were able to do so far
+
+Playing with different requests from (https://reqres.in/) LOGIN/SIGNUP/DELETE/ etc.
+
+### Issues encountered and Any additional details to take into consideration in running and reviewing the assessment.
+
+Couldn't do the approuve token because user from these APIs can't be edite, i started working with FIREBASE but couldn't finish the assessment,
 
 # Getting Started with Create React App
 
